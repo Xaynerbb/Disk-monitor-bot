@@ -10,7 +10,7 @@
 #lsblk 
 
 #logfile="$HOME/logs/disk.log"
-logfile="$HOME/Desktop/TWX/disk.log"
+logfile="$HOME/Desktop/disk-monitor-bot/disk.log"
 mkdir -p "$(dirname "$logfile")"
 
 trap "echo '[$(date)] ERROR: script failed' | tee -a $logfile" ERR

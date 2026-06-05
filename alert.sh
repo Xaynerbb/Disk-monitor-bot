@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # ── Config ────────────────────────────────────────────
-BOT_TOKEN="8687946311:AAElAjrBudBlh25Gc-2-5Qt4uoK5lzXNM_A"
-CHAT_ID="6917988745"
-logfile="$HOME/Desktop/TWX/disk.log"
+source "$HOME/Desktop/disk-monitor-bot/.env"
+logfile="$HOME/Desktop/disk-monitor-bot/disk.log"
 partition="${1:-/dev/sda2}"
 
 # ── Get disk usage ─────────────────────────────────────

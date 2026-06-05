@@ -150,4 +150,11 @@
 [Fri 05 Jun 2026 11:40:01 WAT] /dev/sda2 - 8% used
 {"ok":true,"result":{"message_id":12,"from":{"id":8687946311,"is_bot":true,"first_name":"XaynnMonitor","username":"xaynn_monitor_bot"},"chat":{"id":6917988745,"first_name":"Zay","last_name":"Nab","type":"private"},"date":1780656003,"text":"\u2705 Disk OK: /dev/sda2 is at 8% on xaynn"}}[Fri 05 Jun 2026 11:45:01 WAT] /dev/sda2 - 8% used
 [Fri 05 Jun 2026 11:45:01 WAT] /dev/sda2 - 8% used
-{"ok":true,"result":{"message_id":13,"from":{"id":8687946311,"is_bot":true,"first_name":"XaynnMonitor","username":"xaynn_monitor_bot"},"chat":{"id":6917988745,"first_name":"Zay","last_name":"Nab","type":"private"},"date":1780656302,"text":"\u2705 Disk OK: /dev/sda2 is at 8% on xaynn"}}
+{"ok":true,"result":{"message_id":13,"from":{"id":8687946311,"is_bot":true,"first_name":"XaynnMonitor","username":"xaynn_monitor_bot"},"chat":{"id":6917988745,"first_name":"Zay","last_name":"Nab","type":"private"},"date":1780656302,"text":"\u2705 Disk OK: /dev/sda2 is at 8% on xaynn"}}[Fri 05 Jun 2026 12:10:02 WAT] /dev/sda2 - 8% used
+[Fri 05 Jun 2026 12:10:02 WAT] /dev/sda2 - 8% used
+{"ok":false,"error_code":404,"description":"Not Found"}[Fri 05 Jun 2026 12:11:39 WAT] /dev/sda2 - 8% used
+[Fri 05 Jun 2026 12:11:46 WAT] /dev/sda2 - 8% used - SAFE: Congratulations Xaynnn
+[Fri 05 Jun 2026 12:11:49 WAT] /dev/sda2 - 8% used - SAFE: Congratulations Xaynnn
+[Fri 05 Jun 2026 12:15:01 WAT] /dev/sda2 - 8% used
+[Fri 05 Jun 2026 12:15:01 WAT] /dev/sda2 - 8% used
+{"ok":true,"result":{"message_id":15,"from":{"id":8687946311,"is_bot":true,"first_name":"XaynnMonitor","username":"xaynn_monitor_bot"},"chat":{"id":6917988745,"first_name":"Zay","last_name":"Nab","type":"private"},"date":1780658101,"text":"\u2705 Disk OK: /dev/sda2 is at 8% on xaynn"}}
