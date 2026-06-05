@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # ── Config ────────────────────────────────────────────
-source "$HOME/Desktop/disk-monitor-bot/.env"
-logfile="$HOME/Desktop/disk-monitor-bot/disk.log"
-partition="${1:-/dev/sda2}"
+source "$(dirname "$0")/.env"
+logfile="$(dirname "$0")/disk.log"
+partition="${1:-/}"
 
 # ── Get disk usage ─────────────────────────────────────
 disk_size=$(df -h "$partition" | awk 'NR==2 {print $5}' | tr -d '%')
