@@ -9,17 +9,18 @@
 #echo "Display disk partition in a disk format"
 #lsblk 
 
-logfile="script.log"
-echo "[$(date)] Script started" >> "$logfile"
-echo ""
-echo "Displaying disk usage in a human readable format"
-df -h
-echo ""
+#logfile="$HOME/logs/disk.log"
+logfile="$HOME/Desktop/TWX/disk.log"
+mkdir -p "$(dirname "$logfile")"
+
+trap "echo '[$(date)] ERROR: script failed' | tee -a $logfile" ERR
+
 partition="${1:-/dev/sda2}"
-if [ $(df -h "$partition"| awk 'NR==2 {print $5}' | tr -d '%') -gt 80 ]; then
-    echo "Warning: Storage is greater than 80%" >> "$logfile"
+
+disk_size=$(df -h "$partition" | awk 'NR==2 {print $5}' | tr -d '%')
+
+if [ "$disk_size" -gt 80 ]; then
+    echo "[$(date)] $partition - ${disk_size}% used - WARNING" | tee -a "$logfile"
 else
-    echo "The disk storage is less than 80%, Congratulations Zaynnnn" >> "$logfile"
+    echo "[$(date)] $partition - ${disk_size}% used - SAFE: Congratulations Xaynnn" | tee -a "$logfile"
 fi
-
-
